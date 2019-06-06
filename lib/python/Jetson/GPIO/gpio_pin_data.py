@@ -333,8 +333,8 @@ WARNING: and in fact is unlikely to work correctly.
             raise Exception('Could not determine Jetson Nano module revision')
         revision = module_id.split('-')[-1]
         # Revision is an ordered string, not a decimal integer
-        if revision < "200":
-            raise Exception('Jetson Nano module revision must be A02 or later')
+        #if revision < "200":
+        #    raise Exception('Jetson Nano module revision must be A02 or later')
         warn_if_not_carrier_board('3449')
     elif matches(compats_nx):
         model = JETSON_NX

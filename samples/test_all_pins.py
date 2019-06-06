@@ -38,8 +38,14 @@ pin_datas = {
         'unimplemented': (),
         'input_only': (36, ),
     },
+    # # Nano A02 or later:
+    # 'JETSON_NANO': {
+    #     'unimplemented': (),
+    #     'input_only': (),
+    # },
+    # Nano A01:
     'JETSON_NANO': {
-        'unimplemented': (),
+        'unimplemented': (12, 35, 38, 40),
         'input_only': (),
     },
     'JETSON_NX': {
